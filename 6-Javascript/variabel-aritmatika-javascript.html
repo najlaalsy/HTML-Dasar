@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Variabel Aritmatika
+        </title>
+        <script>
+            function kali(){
+                var b1=document.getElementById("bilangan1").value;
+                var b2=document.getElementById("bilangan2").value;
+                var hasilkali=b1*b2;
+                document.getElementById("hasil").value=hasilkali;
+            
+            }
+            function bagi(){
+                var bil1=document.getElementById("bilangan1").value;
+                var bil2=document.getElementById("bilangan2").value;
+                var hasilbagi=bil1/bil2;
+                document.getElementById("hasil").value=hasilbagi;
+            
+            }
+            function tambah(){
+                var bil1=document.getElementById("bilangan1").value;
+                var bil2=document.getElementById("bilangan2").value;
+                var hasiltambah=Number(bil1)+Number(bil2);
+                document.getElementById("hasil").value=hasiltambah;
+            
+            }
+            function kurang(){
+                var bil1=document.getElementById("bilangan1").value;
+                var bil2=document.getElementById("bilangan2").value;
+                var hasilkurang=bil1-bil2;
+                document.getElementById("hasil").value=hasilkurang;
+            
+            }
+            function bersih(){
+                document.getElementById("bilangan1").value="";
+                document.getElementById("bilangan2").value="";
+                document.getElementById("hasil").value="";
+            
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2> Variabel Aritmatika Dengan Java Script </h2>
+        </center>
+        <pre>
+            <form>
+                Bilangan 1      :<input type="text" id="bilangan1">
+                Bilangan 2      :<input type="text" id="bilangan2">
+                Hasil Operasi   :<input type="text" id="hasil">
+        
+            <p>
+                <input type="button" value="Perkalian" onclick="kali()">    <input type="button" value="Pembagian" onclick="bagi()">    <input type="button" value="Penjumlahan" onclick="tambah()">    <input type="button" value="Pengurangan" onclick="kurang()">    <input type="button" value="Clear" onclick="bersih()">
+            </p>
+            </form>
+        </pre>
+    </body>
+</html>

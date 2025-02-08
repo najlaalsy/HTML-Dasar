@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nilai Kelulusan Mahasiswa</title>
+        <script>
+            function NilaiMhs(){
+                var NA=document.getElementById("nilai").value;
+                if (NA>=85){
+                    document.getElementById("hasil").value="Lulus";
+                    document.getElementById("grade").value="A";
+                }
+                else if (NA>=75){
+                    document.getElementById("hasil").value="Lulus";
+                    document.getElementById("grade").value="B";
+                }
+                else if (NA>=65){
+                    document.getElementById("hasil").value="Lulus";
+                    document.getElementById("grade").value="C";
+                }
+                else if (NA>=55){
+                    document.getElementById("hasil").value="Tidak Lulus";
+                    document.getElementById("grade").value="D";
+                }
+                else if (NA<55){
+                    document.getElementById("hasil").value="Tidak Lulus";
+                    document.getElementById("grade").value="E";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2>Nilai Akhir Mahasiswa/i Program Studi Sistem Informasi</h2>
+        </center>
+        <pre>
+        <form>
+
+                NIM             : <input type="text" id="nim">
+
+                NAMA MAHASISWA  : <input type="text" id="nama">
+
+                NILAI AKHIR     : <input type="text" id="nilai">
+
+                HASIL           : <input type="text" id="hasil">
+
+                GRADE           : <input type="text" id="grade">
+
+            <p>
+                <input type="button" value="Proses" onclick="NilaiMhs()">   <input type="reset" value="Clear">
+            </p>
+            
+        </form>
+        </pre>
+    </body>
+</html>
